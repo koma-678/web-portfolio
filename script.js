@@ -1,53 +1,21 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // MOBILE MENU
-
-    const hamburger = document.getElementById("hamburger");
-    const nav = document.getElementById("nav");
-
-    function closeMenu() {
-        nav.classList.remove("active");
-        hamburger.classList.remove("active");
-        hamburger.setAttribute("aria-expanded", "false");
-        hamburger.setAttribute("aria-label", "メニューを開く");
-    }
-
-    hamburger.addEventListener("click", () => {
-
-        const isOpen = nav.classList.toggle("active");
-
-        hamburger.classList.toggle("active", isOpen);
-        hamburger.setAttribute("aria-expanded", isOpen);
-
-        hamburger.setAttribute(
-            "aria-label",
-            isOpen ? "メニューを閉じる" : "メニューを開く"
-        );
-
-    });
-
-    nav.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", closeMenu);
-    });
-
-    document.addEventListener("keydown", event => {
-        if (event.key === "Escape") {
-            closeMenu();
-        }
-    });
-
-
-    // PROJECT LINKS
+    // GitHubユーザー名の設定
 
     const githubUsername = "koma-678";
+
+
+    // 制作実績へのリンク
 
     document.querySelectorAll("[data-project]").forEach(link => {
 
         if (githubUsername === "YOUR_USERNAME") {
+
             link.removeAttribute("href");
             link.setAttribute("aria-disabled", "true");
             link.textContent = "URL設定準備中";
+
             return;
         }
 
@@ -62,13 +30,59 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // SCROLL ANIMATION
+    // スマホ用メニュー
+
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.getElementById("nav");
+
+    function closeMenu() {
+
+        nav.classList.remove("active");
+        hamburger.classList.remove("active");
+
+        hamburger.setAttribute("aria-expanded", "false");
+        hamburger.setAttribute("aria-label", "メニューを開く");
+
+    }
+
+    hamburger.addEventListener("click", () => {
+
+        const isOpen = nav.classList.toggle("active");
+
+        hamburger.classList.toggle("active", isOpen);
+
+        hamburger.setAttribute("aria-expanded", isOpen);
+
+        hamburger.setAttribute(
+            "aria-label",
+            isOpen ? "メニューを閉じる" : "メニューを開く"
+        );
+
+    });
+
+    nav.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", closeMenu);
+
+    });
+
+    document.addEventListener("keydown", event => {
+
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+
+    });
+
+
+    // スクロールアニメーション
 
     const revealElements = document.querySelectorAll(
-        ".section-heading, .about-content, .stat-card, .work-card, .service-card, .skill-card, .pricing-card, .process-card, .contact h2"
+        ".section-heading, .about-brand, .about-content, .work-card, .service-card, .skills-grid, .pricing-card, .process-card, .contact h2"
     );
 
-    if ("IntersectionObserver" in window) {
+    if ("IntersectionObserver" in window &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
         const observer = new IntersectionObserver(entries => {
 
@@ -77,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (entry.isIntersecting) {
 
                     entry.target.classList.add("visible");
+
                     observer.unobserve(entry.target);
 
                 }
@@ -90,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
         revealElements.forEach(element => {
 
             element.classList.add("reveal");
+
             observer.observe(element);
 
         });
@@ -97,9 +113,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // HEADER AND BACK TO TOP
+    // ヘッダーとトップに戻るボタン
 
     const header = document.querySelector(".header");
+
     const backToTop = document.getElementById("back-to-top");
 
     function updateScroll() {
