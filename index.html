@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NEXORA STUDIO - オリジナルWebサイト制作・Webデザイン。">
+
+    <title>NEXORA STUDIO | Web Design & Development</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            NEXORA<span>.</span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#about">About</a>
+            <a href="#works">Works</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="header-btn">
+            Let's Talk ↗
+        </a>
+
+        <button class="hamburger" id="hamburger"
+            aria-label="メニューを開く"
+            aria-controls="nav"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    AVAILABLE FOR PROJECTS
+                </div>
+
+                <p class="eyebrow">
+                    INDEPENDENT WEB DESIGNER
+                </p>
+
+                <h1>
+                    Design.<br>
+                    Develop.<br>
+                    <span>Deliver.</span>
+                </h1>
+
+                <p class="hero-description">
+                    デザインと技術で、<br>
+                    あなたのビジネスに新しい価値を。
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#works" class="primary-btn">
+                        View My Works ↗
+                    </a>
+
+                    <a href="#services" class="secondary-btn">
+                        Our Services
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-decoration">
+                <span>N</span>
+            </div>
+
+            <div class="hero-bottom">
+                <span>WEB DESIGN & DEVELOPMENT</span>
+                <span>SCROLL TO EXPLORE ↓</span>
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="about section" id="about">
+
+            <div class="section-heading">
+                <p class="section-label">01 / ABOUT</p>
+                <h2>About Me.</h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-content">
+
+                    <h3>
+                        シンプルに、美しく。<br>
+                        伝わるWebデザインを。
+                    </h3>
+
+                    <p>
+                        HTML・CSS・JavaScriptを使用した
+                        オリジナルWebサイト制作を行っています。
+                    </p>
+
+                    <p>
+                        デザイン性だけでなく、使いやすさや
+                        スマートフォンでの閲覧にも配慮し、
+                        一つひとつ丁寧に制作いたします。
+                    </p>
+
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <strong>03</strong>
+                        <span>Personal Projects</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>100%</strong>
+                        <span>Responsive Design</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>01</strong>
+                        <span>Custom Design</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>JP</strong>
+                        <span>Based in Japan</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- WORKS -->
+
+        <section class="works section" id="works">
+
+            <div class="section-heading">
+                <p class="section-label">02 / SELECTED WORKS</p>
+                <h2>Selected Works.</h2>
+                <p>自主制作したWebサイトをご紹介します。</p>
+            </div>
+
+            <div class="works-grid">
+
+                <!-- WORK 01 -->
+
+                <article class="work-card">
+
+                    <div class="work-image">
+                        <img src="images/lumiere.jpg"
+                            alt="美容室サイトの制作実績"
+                            loading="lazy">
+                    </div>
+
+                    <div class="work-content">
+
+                        <p class="work-category">
+                            01 / BEAUTY & SALON
+                        </p>
+
+                        <h3>LUMIÈRE HAIR SALON</h3>
+
+                        <p>
+                            高級感と落ち着いた雰囲気を重視した
+                            美容室のホームページ。
+                        </p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#contact"
+                            data-project="lumiere-salon"
+                            class="work-link">
+                            View Project ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- WORK 02 -->
+
+                <article class="work-card">
+
+                    <div class="work-image">
+                        <img src="images/aoba.jpg"
+                            alt="建設会社サイトの制作実績"
+                            loading="lazy">
+                    </div>
+
+                    <div class="work-content">
+
+                        <p class="work-category">
+                            02 / CORPORATE
+                        </p>
+
+                        <h3>AOBA CONSTRUCTION</h3>
+
+                        <p>
+                            信頼感と清潔感を重視した
+                            建設会社のコーポレートサイト。
+                        </p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#contact"
+                            data-project="aoba-construction"
+                            class="work-link">
+                            View Project ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- WORK 03 -->
+
+                <article class="work-card">
+
+                    <div class="work-image">
+                        <img src="images/aurix.jpg"
+                            alt="ヘッドホンの商品紹介サイト"
+                            loading="lazy">
+                    </div>
+
+                    <div class="work-content">
+
+                        <p class="work-category">
+                            03 / PRODUCT LANDING PAGE
+                        </p>
+
+                        <h3>AURIX X1</h3>
+
+                        <p>
+                            ブラックを基調とした
+                            高級ワイヤレスヘッドホンの商品紹介サイト。
+                        </p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#contact"
+                            data-project="aurix-product"
+                            class="work-link">
+                            View Project ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- SERVICES -->
+
+        <section class="services section" id="services">
+
+            <div class="section-heading">
+                <p class="section-label">03 / SERVICES</p>
+                <h2>What I Do.</h2>
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <span>01</span>
+                    <h3>Web Design</h3>
+                    <p>
+                        お客様のイメージに合わせた
+                        オリジナルWebデザインを制作します。
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <span>02</span>
+                    <h3>Web Development</h3>
+                    <p>
+                        HTML・CSS・JavaScriptによる
+                        Webサイトの構築を行います。
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <span>03</span>
+                    <h3>Responsive Design</h3>
+                    <p>
+                        PC・スマートフォン・タブレットに
+                        対応したサイトを制作します。
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <span>04</span>
+                    <h3>Landing Page</h3>
+                    <p>
+                        商品やサービスの魅力を伝える
+                        ランディングページを制作します。
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- SKILLS -->
+
+        <section class="skills section" id="skills">
+
+            <div class="section-heading">
+                <p class="section-label">04 / TECHNOLOGY</p>
+                <h2>Tech Stack.</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <strong>HTML5</strong>
+                    <span>Structure</span>
+                </div>
+
+                <div class="skill-card">
+                    <strong>CSS3</strong>
+                    <span>Design</span>
+                </div>
+
+                <div class="skill-card">
+                    <strong>JavaScript</strong>
+                    <span>Interaction</span>
+                </div>
+
+                <div class="skill-card">
+                    <strong>GitHub</strong>
+                    <span>Deployment</span>
+                </div>
+
+                <div class="skill-card">
+                    <strong>VS Code</strong>
+                    <span>Development</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PRICING -->
+
+        <section class="pricing section" id="pricing">
+
+            <div class="section-heading">
+                <p class="section-label">05 / PRICING</p>
+                <h2>Simple Pricing.</h2>
+                <p>制作内容に応じてお見積もりいたします。</p>
+            </div>
+
+            <div class="pricing-card">
+
+                <p class="pricing-label">STANDARD PLAN</p>
+
+                <h3>Webサイト制作</h3>
+
+                <div class="price">
+                    ¥20,000<span>〜</span>
+                </div>
+
+                <ul>
+                    <li>オリジナルデザイン</li>
+                    <li>1ページのWebサイト制作</li>
+                    <li>スマートフォン対応</li>
+                    <li>アニメーション実装</li>
+                    <li>基本的なSEO設定</li>
+                    <li>修正2回まで</li>
+                    <li>制作ファイル一式の納品</li>
+                </ul>
+
+                <a href="#contact" class="primary-btn">
+                    Get in Touch ↗
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- PROCESS -->
+
+        <section class="process section">
+
+            <div class="section-heading">
+                <p class="section-label">06 / WORKFLOW</p>
+                <h2>How I Work.</h2>
+            </div>
+
+            <div class="process-grid">
+
+                <article class="process-card">
+                    <span>01</span>
+                    <h3>Consultation</h3>
+                    <p>ご希望の内容をヒアリング</p>
+                </article>
+
+                <article class="process-card">
+                    <span>02</span>
+                    <h3>Design</h3>
+                    <p>デザイン・構成の制作</p>
+                </article>
+
+                <article class="process-card">
+                    <span>03</span>
+                    <h3>Development</h3>
+                    <p>Webサイトの実装・修正</p>
+                </article>
+
+                <article class="process-card">
+                    <span>04</span>
+                    <h3>Delivery</h3>
+                    <p>最終確認・納品</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+
+        <section class="contact section" id="contact">
+
+            <p class="section-label">07 / CONTACT</p>
+
+            <h2>
+                Let's create<br>
+                something great.
+            </h2>
+
+            <p>
+                Webサイト制作のご相談・ご依頼については、
+                サービス公開後に受付先をご案内します。
+            </p>
+
+            <span class="secondary-btn">
+                受付準備中
+            </span>
+
+        </section>
+
+    </main>
+
+    <!-- BACK TO TOP -->
+
+    <button class="back-to-top"
+        id="back-to-top"
+        aria-label="ページの先頭に戻る">
+        ↑
+    </button>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">NEXORA.</div>
+
+        <p>DESIGN. DEVELOP. DELIVER.</p>
+
+        <small>© 2026 NEXORA STUDIO.</small>
+
+    </footer>
+
+</body>
+</html>
